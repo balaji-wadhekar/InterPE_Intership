@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | Elevate E-Commerce</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-circle small">
+                <i class="ph ph-shopping-bag-open"></i>
+            </div>
+            <h2>Elevate</h2>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">
+                <i class="ph ph-squares-four"></i>
+                <span>My Dashboard</span>
+            </a>
+            <a href="#products" class="nav-item">
+                <i class="ph ph-t-shirt"></i>
+                <span>Products</span>
+            </a>
+            <a href="#orders" class="nav-item">
+                <i class="ph ph-receipt"></i>
+                <span>Order History</span>
+            </a>
+            <a href="#documents" class="nav-item">
+                <i class="ph ph-file-text"></i>
+                <span>My Documents</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph ph-heart"></i>
+                <span>Wishlist</span>
+            </a>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <a href="#" class="nav-item" id="logoutBtn">
+                <i class="ph ph-sign-out"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="top-header">
+            <div class="welcome-text">
+                <h1>My Account</h1>
+                <p>Welcome back, <span id="userEmailDisplay" class="highlight">Customer</span></p>
+            </div>
+            
+            <div class="header-actions">
+                <button class="icon-btn"><i class="ph ph-shopping-cart"></i></button>
+                <button class="icon-btn"><i class="ph ph-bell"></i></button>
+                <div class="user-avatar">
+                    <img src="https://ui-avatars.com/api/?name=Customer&background=06b6d4&color=fff" id="avatarImage" alt="Customer">
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Stats Cards for Customer -->
+            <div class="stat-card">
+                <div class="stat-icon purple"><i class="ph ph-package"></i></div>
+                <div class="stat-details">
+                    <h3>Active Orders</h3>
+                    <p class="stat-value">2</p>
+                    <span class="stat-change positive">Arriving Soon</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon pink"><i class="ph ph-heart"></i></div>
+                <div class="stat-details">
+                    <h3>Wishlist Items</h3>
+                    <p class="stat-value">14</p>
+                    <span class="stat-change positive">View Collection</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon cyan"><i class="ph ph-star"></i></div>
+                <div class="stat-details">
+                    <h3>Reward Points</h3>
+                    <p class="stat-value">850</p>
+                    <span class="stat-change positive"><i class="ph ph-gift"></i> Redeemable</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Section -->
+        <div class="product-section" id="products">
+            <div class="panel-header">
+                <h2>Recommended For You</h2>
+                <button class="view-all">Shop All</button>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Classic White Tee" class="product-img">
+                    <div class="product-info">
+                        <h3>Classic White Tee</h3>
+                        <p>Essential Basics</p>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$24.00</span>
+                        <button class="add-to-cart-btn"><i class="ph ph-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Denim Jacket" class="product-img">
+                    <div class="product-info">
+                        <h3>Vintage Denim Jacket</h3>
+                        <p>Outerwear</p>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$89.00</span>
+                        <button class="add-to-cart-btn"><i class="ph ph-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Denim Jeans" class="product-img">
+                    <div class="product-info">
+                        <h3>Slim Fit Jeans</h3>
+                        <p>Denim Collection</p>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$59.50</span>
+                        <button class="add-to-cart-btn"><i class="ph ph-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Leather Jacket" class="product-img">
+                    <div class="product-info">
+                        <h3>Moto Leather Jacket</h3>
+                        <p>Premium</p>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$199.00</span>
+                        <button class="add-to-cart-btn"><i class="ph ph-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order History Table -->
+        <div class="product-section" id="orders">
+            <div class="recent-orders glass-panel" style="grid-column: span 1;">
+                <div class="panel-header">
+                    <h2>Order History</h2>
+                </div>
+                <div class="table-responsive">
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Items</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-8021</td>
+                                <td>Nov 12, 2023</td>
+                                <td>2 Items</td>
+                                <td>$113.50</td>
+                                <td><span class="status-badge processing">In Transit</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-7504</td>
+                                <td>Oct 05, 2023</td>
+                                <td>1 Item</td>
+                                <td>$210.00</td>
+                                <td><span class="status-badge completed">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-6211</td>
+                                <td>Aug 18, 2023</td>
+                                <td>3 Items</td>
+                                <td>$340.00</td>
+                                <td><span class="status-badge completed">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Needed Documents Section -->
+        <div class="product-section" id="documents">
+            <div class="panel-header">
+                <h2>My Documents</h2>
+                <p style="color: var(--text-muted); font-size: 14px; margin-top: 4px;">Invoices, return labels, and tax documents.</p>
+            </div>
+            <div class="customer-docs">
+                <div class="doc-card">
+                    <div class="doc-icon"><i class="ph ph-file-pdf"></i></div>
+                    <div class="doc-info">
+                        <h4>Invoice #ORD-7504</h4>
+                        <p>Oct 05, 2023 • 120 KB</p>
+                    </div>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon"><i class="ph ph-arrow-u-down-left"></i></div>
+                    <div class="doc-info">
+                        <h4>Return Label #ORD-6211</h4>
+                        <p>Aug 20, 2023 • 45 KB</p>
+                    </div>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon"><i class="ph ph-receipt"></i></div>
+                    <div class="doc-info">
+                        <h4>Annual Purchase Summary</h4>
+                        <p>2022 Tax Year • 1.2 MB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="customer-dashboard.js"></script>
+</body>
+</html>

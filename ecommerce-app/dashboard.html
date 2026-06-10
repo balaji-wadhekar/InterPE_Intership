@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Elevate E-Commerce</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-circle small">
+                <i class="ph ph-shopping-bag-open"></i>
+            </div>
+            <h2>Elevate</h2>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">
+                <i class="ph ph-squares-four"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph ph-shopping-cart"></i>
+                <span>Orders</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph ph-users"></i>
+                <span>Customers</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph ph-tag"></i>
+                <span>Products</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="ph ph-chart-line-up"></i>
+                <span>Analytics</span>
+            </a>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <a href="#" class="nav-item" id="logoutBtn">
+                <i class="ph ph-sign-out"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="top-header">
+            <div class="welcome-text">
+                <h1>Overview</h1>
+                <p>Welcome back, <span id="userEmailDisplay" class="highlight">User</span></p>
+            </div>
+            
+            <div class="header-actions">
+                <button class="icon-btn"><i class="ph ph-bell"></i></button>
+                <div class="user-avatar">
+                    <img src="https://ui-avatars.com/api/?name=User&background=8b5cf6&color=fff" id="avatarImage" alt="User">
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Stats Cards -->
+            <div class="stat-card">
+                <div class="stat-icon purple"><i class="ph ph-currency-dollar"></i></div>
+                <div class="stat-details">
+                    <h3>Total Revenue</h3>
+                    <p class="stat-value">$24,592.00</p>
+                    <span class="stat-change positive"><i class="ph ph-trend-up"></i> +12.5%</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon cyan"><i class="ph ph-shopping-bag"></i></div>
+                <div class="stat-details">
+                    <h3>Active Orders</h3>
+                    <p class="stat-value">342</p>
+                    <span class="stat-change positive"><i class="ph ph-trend-up"></i> +5.2%</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon pink"><i class="ph ph-users-three"></i></div>
+                <div class="stat-details">
+                    <h3>New Customers</h3>
+                    <p class="stat-value">1,204</p>
+                    <span class="stat-change negative"><i class="ph ph-trend-down"></i> -1.4%</span>
+                </div>
+            </div>
+
+            <!-- Recent Orders Table -->
+            <div class="recent-orders glass-panel">
+                <div class="panel-header">
+                    <h2>Recent Orders</h2>
+                    <button class="view-all">View All</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-7352</td>
+                                <td>Jane Doe</td>
+                                <td>Oct 24, 2023</td>
+                                <td>$124.00</td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-7351</td>
+                                <td>John Smith</td>
+                                <td>Oct 23, 2023</td>
+                                <td>$89.50</td>
+                                <td><span class="status-badge processing">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-7350</td>
+                                <td>Alice Johnson</td>
+                                <td>Oct 23, 2023</td>
+                                <td>$210.00</td>
+                                <td><span class="status-badge pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
