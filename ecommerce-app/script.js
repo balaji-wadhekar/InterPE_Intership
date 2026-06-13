@@ -118,7 +118,11 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
         
         setTimeout(() => {
-            window.location.href = 'dashboard.html';
+            if (email.toLowerCase().includes('admin')) {
+                window.location.href = 'dashboard.html';
+            } else {
+                window.location.href = 'customer-dashboard.html';
+            }
         }, 600);
     }
 

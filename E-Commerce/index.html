@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | Premium Lifestyle</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="ph ph-diamond"></i>
+                <span>AURA</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search"><i class="ph ph-magnifying-glass"></i></button>
+                <button class="icon-btn" aria-label="User Account"><i class="ph ph-user"></i></button>
+                <button class="icon-btn cart-btn" aria-label="Shopping Cart">
+                    <i class="ph ph-shopping-bag"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        
+        <div class="hero-content">
+            <span class="pill">New Autumn Collection</span>
+            <h1 class="hero-title">Discover Your<br>True <span class="highlight">Aesthetic</span>.</h1>
+            <p class="hero-subtitle">Elevate your everyday look with our premium, carefully curated pieces designed for the modern lifestyle.</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary">Shop Now <i class="ph ph-arrow-right"></i></button>
+                <button class="btn btn-secondary">Explore Catalog</button>
+            </div>
+        </div>
+        
+        <div class="hero-image-wrapper">
+            <div class="glass-card main-img-card">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fashion Model" class="hero-img">
+                <div class="floating-badge badge-top">
+                    <i class="ph ph-star-four"></i>
+                    <span>Premium Quality</span>
+                </div>
+                <div class="floating-badge badge-bottom">
+                    <div class="price-tag">$129.00</div>
+                    <span>Silk Blouse</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Collections -->
+    <section class="section" id="collections">
+        <div class="section-header">
+            <h2>Trending Now</h2>
+            <p>Our most sought-after pieces this season.</p>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Minimalist Watch">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Accessories</span>
+                    <h3>Minimalist Watch</h3>
+                    <div class="price-row">
+                        <span class="price">$195.00</span>
+                        <button class="add-to-cart">Add <i class="ph ph-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Leather Jacket">
+                    <span class="tag sale">Sale</span>
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Outerwear</span>
+                    <h3>Classic Moto Leather</h3>
+                    <div class="price-row">
+                        <span class="price">$249.00 <span class="old-price">$320.00</span></span>
+                        <button class="add-to-cart">Add <i class="ph ph-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Canvas Tote">
+                    <span class="tag new">New</span>
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Bags</span>
+                    <h3>Everyday Canvas Tote</h3>
+                    <div class="price-row">
+                        <span class="price">$85.00</span>
+                        <button class="add-to-cart">Add <i class="ph ph-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="White Tee">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Basics</span>
+                    <h3>Premium Cotton Tee</h3>
+                    <div class="price-row">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add <i class="ph ph-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
