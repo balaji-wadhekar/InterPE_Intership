@@ -385,7 +385,7 @@ function updateCheckoutTotals() {
 document.getElementById('apply-promo-btn').addEventListener('click', () => {
     const code = document.getElementById('promo-input').value.trim().toUpperCase();
     const msg = document.getElementById('promo-message');
-    if(code === 'INTERNPE10') {
+    if(code === 'WELCOME10') {
         discountApplied = true;
         msg.textContent = '10% Discount Applied Successfully!';
         msg.className = 'promo-message promo-success';
